@@ -1,0 +1,46 @@
+.edit-employee-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 180px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  padding: 25px 15px;
+  margin: auto;
+  gap: 15px;
+  background-color: aliceblue;
+  font-size: 1.3em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form__input {
+  padding: 5px;
+  border: 1px solid #cfc6c6;
+  border-radius: 5px;
+}
+
+.phone {
+  width: calc(100% - 60px);
+}
+
+.tel::after {
+  content: "Пример: +7 (888) 888-8888";
+  font-size: 0.8em;
+}
+
+.order-form__button-submit {
+  height: 45px;
+}

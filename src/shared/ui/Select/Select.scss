@@ -1,0 +1,49 @@
+@use "@/shared/ui/colors.scss" as color;
+
+.select {
+  position: relative;
+  background-color: color.$white;
+}
+
+.select__summary {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  height: 45px;
+  padding: 10px 18px;
+  padding-right: 0;
+  border: 2px solid color.$border;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border-color: color.$border-hover;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:focus {
+    border-color: color.$border-hover;
+  }
+  &::after {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("@/shared/assets/arrow-icon.svg");
+  }
+}
+
+.select__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  background-color: color.$white;
+  box-shadow: color.$box-shadow;
+  z-index: 1;
+}
+
+.select__option {
+  padding: 10px 17px;
+  cursor: pointer;
+}

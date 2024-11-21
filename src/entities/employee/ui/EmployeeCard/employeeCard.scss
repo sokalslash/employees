@@ -1,0 +1,40 @@
+@use "@/shared/ui/colors.scss" as color;
+
+.employee-card {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  min-width: 210px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  color: color.$black;
+  background-color: color.$white;
+  box-shadow: color.$box-shadow;
+}
+
+.employee-card__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.employee-card__name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.employee-card__phone-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border: 2px solid color.$border;
+  border-radius: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("@/shared/assets/phone-icon.svg");
+}
